@@ -8,7 +8,8 @@
 
 {% for cheese in cheese_list %}
 <li>
-    <a href="#TODO">
+    <a
+    href="{% url 'cheeses:detail' cheese.slug %}">
         {{ cheese.name }}
     </a>
 </li>
