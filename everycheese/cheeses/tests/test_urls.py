@@ -16,11 +16,11 @@ def test_list_resolve():
 
 
 def test_add_reverse():
-    assert reverse("cheeses:add") == "/cheeses/~add/"
+    assert reverse("cheeses:add") == "/cheeses/add/"
 
 
 def test_add_resolve():
-    assert resolve("/cheeses/~add/").view_name == "cheeses:add"
+    assert resolve("/cheeses/add/").view_name == "cheeses:add"
 
 
 @pytest.fixture
