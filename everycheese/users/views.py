@@ -45,6 +45,7 @@ class UserUpdateView(LoginRequiredMixin, UpdateView):
 user_update_view = UserUpdateView.as_view()
 
 
+
 class UserRedirectView(LoginRequiredMixin, RedirectView):
     permanent = False
 
