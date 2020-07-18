@@ -26,5 +26,12 @@
 {{ cheese.creator.username }}
 </a></h3>
 
+<p>
+    <a class="btn btn-primary" href="{% url 'cheeses:update' cheese.slug %}">
+        Update
+    </a>
+
+</p>
+
 
 {% endblock content %}
